@@ -34,14 +34,16 @@ function Numero(_n) {
   // Desactivamos la marquesina.
   Animacion_Marquesina(false);
 
+  // En caso de ser más de un cero, dejamos solo uno.
+  if (nuevoValor === "00") {
+    nuevoValor = '0';
+  }
+
   // Mostramos el nuevo valor
   elemNumero.innerHTML = nuevoValor;
 
-  // En caso de ya ser cero, tiene que romper el ciclo.
-  if (nuevoValor === "0") {
-    nuevoValor = '';
-  }
 }
+
 
 // Función para procesar la selección de un operador
 function Operador(_op) {
@@ -62,7 +64,6 @@ function Operador(_op) {
   // Llamamos a "Calcular" para que decida si debe o no hacer la operación.
   Calcular();
 }
-
 
 
 // Función para realizar las operaciones y mostrar el resultado
@@ -106,6 +107,9 @@ function Calcular() {
 
   // Mostramos el nuevo valor en el display.
   elemNumero.innerHTML = memoria;
+
+  // Invocamos la animación de Parpadeo
+  Animacion_Parpadeo();
 }
 
 // Función para resetear la calculadora, la usamos al inicio ni bien carga la web y también cuando el usuario presiona la tecla "C".
@@ -156,9 +160,12 @@ function Animacion_Marquesina(_mostrar) {
 
 // Para simular el parpadeo que tienen las calculadoras de bolsillo. Esto es algo netamente estético.
 function Animacion_Parpadeo() {
-  let style = elemNumero.getAttribute('style');
-  elemNumero.setAttribute('style', 'display: none');
-  setTimeout(function () {
-    elemNumero.setAttribute('style', style);
-  }, 100)
+  // Averiguamos si ya esta animandose.
+  if (elemNumero.getAttribute('style') != 'display: none') {
+    let style = elemNumero.getAttribute('style');
+    elemNumero.setAttribute('style', 'display: none');
+    setTimeout(function () {
+      elemNumero.setAttribute('style', style);
+    }, 100)
+  }
 }
