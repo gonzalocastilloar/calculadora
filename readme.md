@@ -3,3 +3,4 @@ Este proyecto tiene como objetivo fomentar la práctica de la interacción entre
 
 La estrategia es sencilla, capturar los botones numéricos, acumular el valor actual para luego guardarlo en memoria una vez seleccionemos un operador matemático.
 
+El código está comentado con fines didáctico.
