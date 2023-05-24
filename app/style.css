@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: linear-gradient(109.6deg, rgba(103, 30, 117, 1) 11.2%, rgba(252, 76, 2, 1) 91.1%);
+  background-image: linear-gradient(81deg, rgba(103, 30, 117, 1) 11.2%, rgba(252, 76, 2, 1) 91.1%);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -34,7 +34,7 @@ a:hover {
 }
 
 .corazon {
-  color: red;
+  color: rgb(255, 53, 53);
 }
 
 .contenedor {
