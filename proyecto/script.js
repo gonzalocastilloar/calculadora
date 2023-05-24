@@ -1,3 +1,5 @@
+// Autor: Gonzalo Castillo - 2023 
+
 var memoria = null; // Variable para almacenar el resultado previo
 var nuevoValor = ''; // Variable para almacenar el nuevo valor ingresado
 var operacion = ''; // Variable para almacenar la operación actual
@@ -67,10 +69,10 @@ function Operador(_op) {
 function Calcular() {
 
   // Si no hay nuevo valor, no hacemos nada y salimos de la función con "return";
-  if (nuevoValor == '') return;
+  if (nuevoValor === '') return;
 
 
-  if (memoria == null) {
+  if (memoria === null) {
     // Si memoria está vacía, es porque estamos ante el primer valor a operar, la almacenamos y no procesamos nada.
     memoria = parseInt(nuevoValor);
 
