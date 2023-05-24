@@ -11,6 +11,7 @@ body {
   width: 100vw;
   margin: 0px;
   font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
 }
 
 .copyright {
