@@ -1,5 +1,5 @@
 # Calculadora
-Este proyecto tiene el objetivo de practicar la interacción entre JavaScript y los elementos del DOM. 
+Este proyecto tiene como objetivo fomentar la práctica de la interacción entre JavaScript y los elementos del DOM. 
 
-La estrategia es sencilla, guardar el valor actual para luego acumularlo en memoria una vez seleccionemos un operador matemático.
+La estrategia es sencilla, capturar los botones numéricos, acumular el valor actual para luego guardarlo en memoria una vez seleccionemos un operador matemático.
 
