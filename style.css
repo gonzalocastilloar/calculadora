@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'DSDigi';
+  src: url('ds-digi.ttf');
+}
+
+body {
+  background-image: linear-gradient(109.6deg, rgba(103, 30, 117, 1) 11.2%, rgba(252, 76, 2, 1) 91.1%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.copyright {
+  text-align: center;
+  opacity: 0.5;
+  color: white;
+  font-size: 12px;
+  position: fixed;
+  bottom: 20px;
+  width: 100vw;
+}
+
+.contenedor {
+  width: 200px;
+  position: relative;
+  margin: 40px auto;
+  background-color: #404443;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+#pantalla {
+  position: relative;
+  height: 45px;
+  background-color: #bbcd99;
+  padding: 0px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  width: 170px;
+  font-family: DSDigi;
+  margin-bottom: 10px;
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.5), inset 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+  color: #555;
+}
+
+#animacion,
+#numero {
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  text-align: left;
+  width: 100%;
+  font-size: 40px;
+  float: left;
+  line-height: 40px;
+}
+
+#animacion {
+  opacity: 0.3;
+}
+
+#numero {
+  padding: 0px 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 90%;
+}
+
+
+#operador {
+  float: right;
+  padding: 5px;
+  line-height: 27px;
+  font-size: 30px;
+}
+
+.buttons {
+  font-size: 0;
+}
+
+button {
+  font-size: 15px;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  display: inline-block;
+  background-color: #303030;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.5), 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.2)
+}
+
+
+button[disabled] {
+  opacity: 0.5;
+}
+
+button[onclick^="Operador"] {
+  background-color: #89cced;
+  color: #333;
+  font-weight: bolder;
+}
+
+#igual {
+  background-color: #fd9a35;
+  color: #333;
+}
+
+#C {
+  background-color: #f34a67;
+  color: #333;
+}
